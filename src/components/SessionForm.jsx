@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { TAGS, validate } from '../lib/sessions.js';
 
-const EMPTY = { label: '', minutes: '45', tag: TAGS[0] };
+const EMPTY = { label: '', minutes: '46', tag: TAGS[0] };
 
 export default function SessionForm({ onAdd }) {
   const [values, setValues] = useState(EMPTY);
