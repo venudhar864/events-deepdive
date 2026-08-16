@@ -49,10 +49,11 @@ jobs:
         run: npm run build
       - name: Upload artifacts
         uses: actions/upload-artifacts@v4
-        with: dist-files
-        path: |
-          dist
-          package.json
+        with: 
+          name: dist-files
+          path: |
+            dist
+            package.json
  
   Deploy:
     needs: build
