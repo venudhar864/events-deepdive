@@ -51,13 +51,15 @@ jobs:
         uses: actions/upload-artifact@v4
         with: 
           name: dist-files
-          path: |
-            dist
-            package.json
- 
+          path: dist
+           # path: |
+           # dist
+           # package.json
   Deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Get Download
+        uses: actions/Download-artifact@v4
       - name: Deploy
         run: echo "Deploying..."
