@@ -50,7 +50,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifacts@v4
         with: dist-files
-        path:
+        path: |
           dist
           package.json
  
